@@ -1,0 +1,465 @@
+
+/* import police baumans pour section header */
+@font-face {
+    font-family:"baumans" ;
+    src: url(../police/baumans_regular.ttf);
+}
+
+/* arial pour le body, width 100% */
+body {
+    margin: auto;
+    font-size: 16px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -------------------HEADER-------------------- */
+
+/* contien logo et bouton et menu */
+header{
+ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:"baumans";
+    flex-wrap: wrap;
+    
+    
+}
+
+/* box de mon logo et des bouton*/
+.menu-bouton{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    font-family: 'Baumans', cursive;
+    flex-wrap: wrap;
+
+}
+
+/* box logo */
+#logo{
+    display: flex;
+    width: 50%;
+   
+}
+
+/*section menu en haut a droite */
+div #filter{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+/* boite general qui grp les 3 span des icone et txt*/
+.filtresEns{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+  
+  
+  }
+
+
+/* hover des bulles pour color orange */
+.filtresEns span:hover{
+    display: flex;
+    background-color:rgb(255,65, 0);
+    color: white;
+    cursor: pointer;
+    border: 2px solid rgb(242,242, 242);
+    
+}
+
+.filtresEns span{
+    display: flex;
+    border: 2px solid rgb(242,242, 242);
+    cursor: pointer;
+    
+    
+}
+
+/* Boite pour icon et span */
+.filtre-box{
+    
+    
+    border-radius:50px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-right: 15px;
+    
+    
+}
+
+
+/* icon et bulle */
+.filtre-box i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255,65, 0);
+    background-color: rgb(244,228, 192);
+    width: 65px;
+    height: 65px;
+    border-radius: 32.5px;
+    font-size: 22px;
+    
+    
+    
+    
+}
+
+/* text des bulles  */
+span.text{
+font-weight: bold;
+ 
+ margin: 10px;
+ border :none
+}
+
+span.text:hover{
+ border : none
+}
+
+main{
+    display: flex;
+    width: 90%;
+    
+}
+
+
+/* div du nav */
+div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* bloc nav */
+nav{
+    background-color: black;
+    display: flex;
+    height: 60px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 90%;
+}
+
+/* structure liste */
+ul{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+
+
+/* liste a puce */
+li{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    
+   
+}
+
+/* puce */
+li a{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    height: 50px;
+    
+        
+
+}
+
+/* couleur orange au survol */
+li a:hover{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    height: 50px;
+    background-color:rgb(255,65, 0); ;
+}
+
+/* lien non surligné */
+a{
+ text-decoration: none;
+}
+
+
+/* ------------------ACTIVITES------------------- */
+
+/* boite principal */
+main{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+   
+}
+
+/* section contien les elements acitivité */
+section.element{
+    background-color: rgb(242,242, 242);
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+/* boite du texte activité */
+.titre-activites{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+/* txt activité à découvrir */
+.titre-activites h1{
+
+    width: 100%;
+    margin-left: 20px;
+    font-size: 26px;
+    margin-top: 30px;
+    }
+
+/* grp toute les activités */
+#activites{
+    display: flex;
+    width: 100%;
+    
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+
+/* boite pour chaque activité */
+.activite{
+
+    display: flex;
+    width: 30%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/* lien qui grp img + div infoactivité */
+.activite a{
+    display: flex;
+    width: 100%;
+    height:auto;
+    flex-direction: column;
+    border: 2px solid rgb(222, 222, 222);
+    background-clip: content-box;
+    padding: 5px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* image de l'activité */
+.activiteimg{
+  display: flex;
+  object-fit: contain;
+  width: 100%;
+  height: 130px;
+  object-fit: cover ;
+  border-top-left-radius: 25px 25px ;
+  border-top-right-radius: 25px 25px;
+}
+
+/* boite qui contient les textes avtivité */
+.infoactivite{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* titre correspondant à l'activité */
+h4{
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+
+/* txt heure/semaine */
+.infoactivite p{
+    width: 100%;
+    margin-top: 8px;
+    padding: 0;
+    color: black;
+}
+
+/* Prix en gras */
+span.prix{
+    font-weight: bold;
+}
+    
+
+/* ------------------------FOOTER------------------------ */
+
+
+/* boite pied de page */
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    
+
+}
+/* txt copyright pied de page */
+h4.footer-title{
+    color: white;
+    display: flex;
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    height: 65px;
+    align-items: center;
+}
+
+hr{
+    width: 90%;
+}
+    
+
+@media screen and  (max-width: 920px)  {
+    /* box logo */
+#logo{
+    width: 100%;
+    justify-content: center;
+   
+}
+
+/*section menu en haut a droite */
+div #filter{
+    width: 100%;
+    justify-content: center;
+}
+
+.filtresEns{
+    width: 100%;
+    justify-content: center;
+      
+    flex-wrap: wrap; 
+}
+
+
+/* bloc nav */
+div nav{
+    background-color: black;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+
+
+/* structure liste */
+ul{
+  
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    
+    
+}
+
+/* grp toute les activités */
+#activites{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+
+/* boite pour chaque activité */
+.activite{
+
+    display: flex;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titre-activites{
+    text-align: center;
+}
+
+
+    
+}
+
+@media screen and  (max-width: 590px)  {
+
+/* boite pour chaque activité */
+.activite{
+
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+}
+
+
